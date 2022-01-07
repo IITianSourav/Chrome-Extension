@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time SetUp(Setting)</title>
+<style>
+ 
+html{
+    background-image:linear-gradient(rgb(250, 250, 253),rgba(189, 240, 241, 0.021),rgb(128, 234, 241));
+    height: 550px;
+    width: 250px;
+    }
+h1{
+    font-size: 23px;
+    text-align: center;
+    font-family: cursive;
+    color: rgba(5, 5, 167, 0.822);
+    text-shadow:1px 2px black;
+    }
+#image{
+    opacity: 0.12;
+}
+#list{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    bottom: 10px;
+    right: 30px;
+    position: absolute;
+    padding:3px;
+}
+#selectTime{
+ width: 34px;
+}
+#hours,#minutes,#seconds{
+    width:34px;
+}
+    </style>
+</head>
+<body>
+    <h1>Setting</h1>
+
+        <input type="text" placeholder="Your name" id='username'><div id="settime">Set Your Valuable Time</div>
+        <select id="selectTime">
+            <option value="workTime"> 1. Work Time</option>
+            <option value="restTime">2. Rest Time</option>
+            <option value="spendTimeInSocialMedia">3. Spend Time in Social Media</option>
+        </select>
+        <input type="number" min="0" max="24" id="hours" placeholder="HH">
+        <input type="number" min="0" max="59" id="minutes" placeholder="MM">
+        <input type="number" min="0" max="59" id="seconds" placeholder="SS">
+        <button id="btn1">submit</button>
+        
+     
+    <img src="icons/clock256px.png"  id="image">
+    <div id="header">
+        <ul id="list">
+            <li><a href="popup.html">Home</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="howToUse.html">How to Use</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+
+    </ul>
+    </div>
+    <div><span id="timer">00:00:00</span></div>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="setting.js"></script>
+    <script src="input.js"></script>
+     
+</body>
+</html>
